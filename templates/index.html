@@ -9,6 +9,60 @@
 <body>
 
   <h1>testing</h1>
+
+  
+ <style>
+    h1 {
+      color  : rebeccapurple;
+    }
+ 
+    .container {
+      display: flex;
+      justify-content: center;
+      height: 800px;
+      width: 800px;
+      margin: auto auto;
+      flex-wrap: wrap;
+    }
+ 
+    .box {
+     background-color: aquamarine;
+     width: 150px;
+     height: 150px;
+     display: flex;
+     margin: 10px;
+     border: 2px solid black;
+    }
+ 
+    .box p {
+     margin: auto auto;     
+    }
+ 
+ 
+  </style>
+ 
+
+  <div class="container">
+
+    {{times}}
+
+    {{color}}
+
+  {% for i in range(0,times,1): %}
+   <div class="box" style="background-color: {{color}}">
+      <p> {{i}} </p>
+    </div>
+  {% endfor %}
+
+
+
+  </div>p
+
+
+
+
+
+
   
 </body>
 </html>
